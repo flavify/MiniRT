@@ -2,14 +2,14 @@
 # <p align="center">**miniRT**</p>
 # <p align="center"> <sup>A program coded in </sup> [![My Skills](https://skillicons.dev/icons?i=c)](https://skillicons.dev)<sup> in accordance with [The Norm](https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf) of 42 School.</sup> </p>
 
->## <p align="center"> <sup>Team project created by: [Flavia](https://github.com/dendeaisd) & [Mary Kate](https://github.com/MaryKateEvan)  </sup></p>
+>## <p align="center"> <sup>Team project created by: [Flavia](https://github.com/flavify) & [Mary Kate](https://github.com/MKcodes2)  </sup></p>
 
 > 
 
 ## 📝 Description
 "_The goal of this project is to generate images using the **Raytracing protocol**. Those computer-generated images each represent a scene, as seen from a specific angle and position, defined by simple geometric objects, and each with its own lighting system._"
 
-In simpler words, from a 'weird' **.rt file**, full of numbers that follow [_specific guidelines_](https://github.com/dendeaisd/MiniRT?tab=readme-ov-file#-scene-decription-file-scenert), we generate **images**, that represent the "scene" that the .rt file "describes":
+In simpler words, from a 'weird' **.rt file**, full of numbers that follow [_specific guidelines_](https://github.com/flavify/MiniRT?tab=readme-ov-file#-scene-decription-file-scenert), we generate **images**, that represent the "scene" that the .rt file "describes":
 
 ![overview_example](images/overview_example.png)
 Graphics Library that was used: [MLX42](https://github.com/codam-coding-college/MLX42)
@@ -27,7 +27,6 @@ Graphics Library that was used: [MLX42](https://github.com/codam-coding-college/
 ![snowman](images/snowman.png)<br><br>
 
 ## 🎯 Mandatory requirements:
-> as specified in the [Subject](https://github.com/rphlr/42-Subjects/blob/main/common-core/miniRT/en.subject.pdf)
 
 ✔️ Handling of the three geometric objects: **plane** 🃏, **sphere** 🏀 and **cylinder** 🧨. <br>
 ✔️ Management of all possible **intersections** of the objects.<br>
@@ -48,7 +47,7 @@ Graphics Library that was used: [MLX42](https://github.com/codam-coding-college/
 💡 **TIP**: *You can create **any scene** you want, by following the above requirements and specified ranges for the numbers.*<br>
 
 ### ❗ Error Handling:
-> You can browse many cases of [invalid scene files](https://github.com/dendeaisd/MiniRT/tree/main/scenes/invalid) and run them according to the [Usage 🚀 ](https://github.com/dendeaisd/MiniRT?tab=readme-ov-file#--usage)  instructions, to check the Error messages we provide.
+> You can browse many cases of [invalid scene files](https://github.com/flavify/MiniRT/tree/main/scenes/invalid) and run them according to the [Usage 🚀 ](https://github.com/flavify/MiniRT?tab=readme-ov-file#--usage)  instructions, to check the Error messages we provide.
 - Running the program with more than 3 arguments, or less than 2.
 - Empty or unexisting .rt file
 - Wrong extension of file, like `.txt`
@@ -66,10 +65,10 @@ Graphics Library that was used: [MLX42](https://github.com/codam-coding-college/
 ### &nbsp;1️⃣ &nbsp;Cone Object 🍦
 - The cone (with identifier `cn`) follows the pattern of the cylinder declaration, with only difference that the first x,y,z coordinates represent now the bottom of the cone:
 ![cone_description](images/cone_description.png)
-- You can notice the presence of cone for example in the `icecream` and `dwarf` scenes above in the [Preview 👀](https://github.com/dendeaisd/MiniRT?tab=readme-ov-file#-preview).
+- You can notice the presence of cone for example in the `icecream` and `dwarf` scenes above in the [Preview 👀](https://github.com/flavify/MiniRT?tab=readme-ov-file#-preview).
 
 ### &nbsp;2️⃣ &nbsp;Colored Light 🎨💡
-- We are parsing **RGB color values for the Light** (as shown above in the [scene decription file explanation](https://github.com/dendeaisd/MiniRT?tab=readme-ov-file#-scene-decription-file-scenert)).
+- We are parsing **RGB color values for the Light** (as shown above in the [scene decription file explanation](https://github.com/flavify/MiniRT?tab=readme-ov-file#-scene-decription-file-scenert)).
 - Examples of rendered images with colored light:
 
 ![colored_light_images](images/colored_light_collage.png)
@@ -88,7 +87,7 @@ Here's an example of the **soft shadows** we added, vs the **hard shadows** that
 
 ### &nbsp;5️⃣ &nbsp; LIVE Movements of Camera, Light, Objects &nbsp; 🎥 
 
-We provide the option to interact LIVE with the Camera, Light and Objects so that you see directly the modification on the rendered image. (*For "How to" check the corresponding section in [Usage 🚀 ](https://github.com/dendeaisd/MiniRT?tab=readme-ov-file#-how-to-move-the-scene-in-the-interactive-mode)*)
+We provide the option to interact LIVE with the Camera, Light and Objects so that you see directly the modification on the rendered image. (*For "How to" check the corresponding section in [Usage 🚀 ](https://github.com/flavify/MiniRT?tab=readme-ov-file#-how-to-move-the-scene-in-the-interactive-mode)*)
 
 #### 1. Translation and Rotation of the Camera 📷 :
 ![camera_movement_gif](images/camera_movement.gif)
@@ -107,7 +106,7 @@ In order for the LIVE movements (presented above) to be smooth, we needed a **li
 | **1. HD mode &nbsp;🖥️** | 1920x1080 | ✅ | ❌ | `./miniRT scenes/grape.rt HD` |
 | **2. Interactive mode 🕹️** | 800x600 | ❌ | ✅ | `./miniRT scenes/grape.rt` |
 
-&nbsp; 💁‍♀️ &nbsp; *For analytical info on how to run the different modes, check out the [Usage 🚀 ](https://github.com/dendeaisd/MiniRT?tab=readme-ov-file#--usage)  section below ⬇️.*
+&nbsp; 💁‍♀️ &nbsp; *For analytical info on how to run the different modes, check out the [Usage 🚀 ](https://github.com/flavify/MiniRT?tab=readme-ov-file#--usage)  section below ⬇️.*
 
 ### &nbsp;7️⃣ &nbsp; Randomized stars in the backround &nbsp; 🌌
 That was an aesthetic addition, because in the absence of planes as background, there was an absolute black background which we wanted to "beautify", so randomized stars were our "solution": <br><br>
@@ -116,7 +115,7 @@ That was an aesthetic addition, because in the absence of planes as background, 
 ## ⚙️ Installation
 1. Clone the repository:
 ```bash
-git clone --recursive https://github.com/dendeaisd/MiniRT.git 
+git clone --recursive https://github.com/flavify/MiniRT.git 
 ```
 2. Navigate to the project's directory:
 ```bash
@@ -129,16 +128,16 @@ make
 
 ## 🚀  Usage
 
-You can run the program in 2 different ways, depending on what mode you want (check above the [Dual mode for running the program 🔄](https://github.com/dendeaisd/MiniRT?tab=readme-ov-file#6%EF%B8%8F%E2%83%A3--dual-mode-for-running-the-program--)). 
+You can run the program in 2 different ways, depending on what mode you want (check above the [Dual mode for running the program 🔄](https://github.com/flavify/MiniRT?tab=readme-ov-file#6%EF%B8%8F%E2%83%A3--dual-mode-for-running-the-program--)). 
 
 
-❗ For both modes, replace the `<scene_of_your_choice.rt>` below ⬇️ with the scene you choose from the [scenes](https://github.com/dendeaisd/MiniRT/tree/main/scenes) folder.
+❗ For both modes, replace the `<scene_of_your_choice.rt>` below ⬇️ with the scene you choose from the [scenes](https://github.com/flavify/MiniRT/tree/main/scenes) folder.
 ### &nbsp;1. For **HD mode**&nbsp; 🖥️ 
 You need to give as third argument the **`HD`** string and run it as follows:
 ```bash
 ./miniRT scenes/<scene_of_your_choice.rt> HD
 ```
-which will open the bigger window mentioned in the [Dual mode](https://github.com/dendeaisd/MiniRT?tab=readme-ov-file#6%EF%B8%8F%E2%83%A3--dual-mode-for-running-the-program--) above, with the **greater resolution** and **soft shadows**. 
+which will open the bigger window mentioned in the [Dual mode](https://github.com/flavify/MiniRT?tab=readme-ov-file#6%EF%B8%8F%E2%83%A3--dual-mode-for-running-the-program--) above, with the **greater resolution** and **soft shadows**. 
 <p> Examples: </p>
 
 ```bash
@@ -153,7 +152,7 @@ You run the scene without any third argument:
 ```bash
 ./miniRT scenes/<scene_of_your_choice.rt>
 ```
-This opens a smaller window, with **hard shadows**, where you can move **LIVE** the camera, objects and light, to see the changes directly, like it's shown above in the [Live Movements Examples](https://github.com/dendeaisd/MiniRT?tab=readme-ov-file#5%EF%B8%8F%E2%83%A3--live-movements-of-camera-light-objects--).
+This opens a smaller window, with **hard shadows**, where you can move **LIVE** the camera, objects and light, to see the changes directly, like it's shown above in the [Live Movements Examples](https://github.com/flavify/MiniRT?tab=readme-ov-file#5%EF%B8%8F%E2%83%A3--live-movements-of-camera-light-objects--).
 <p> Examples: </p>
 
 ```bash
@@ -202,5 +201,5 @@ which means that you can combine holding one **element key** with one **movement
 
 ## 🙌 &nbsp;Acknowledgements
 
-- The files [`icecream.rt`](https://github.com/dendeaisd/MiniRT/blob/main/scenes/icecream.rt) and [`snowman.rt`](https://github.com/dendeaisd/MiniRT/blob/main/scenes/snowman.rt) are borrowed from the [oph-design/miniRT](https://github.com/oph-design/miniRT.git) authored by [oph-design](https://github.com/oph-design) and [LaurinUB](https://github.com/LaurinUB).
-- Special Thanks also to [oph-design](https://github.com/oph-design) for the creation of our scene [`dwarf.rt`](https://github.com/dendeaisd/MiniRT/blob/main/scenes/dwarf.rt) 🙏
+- The files [`icecream.rt`](https://github.com/flavify/MiniRT/blob/main/scenes/icecream.rt) and [`snowman.rt`](https://github.com/flavify/MiniRT/blob/main/scenes/snowman.rt) are borrowed from the [oph-design/miniRT](https://github.com/oph-design/miniRT.git) authored by [oph-design](https://github.com/oph-design) and [LaurinUB](https://github.com/LaurinUB).
+- Special Thanks also to [oph-design](https://github.com/oph-design) for the creation of our scene [`dwarf.rt`](https://github.com/flavify/MiniRT/blob/main/scenes/dwarf.rt) 🙏
